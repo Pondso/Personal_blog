@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Blog Personal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* HEADER CON IMAGEN BINARIA + DEGRADADO */
+        .header-custom {
+            background:
+                linear-gradient(135deg, rgba(0,0,0,0.85), rgba(0,0,0,0.6)),
+                url('../images/código-binario-de-fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <header class="header-custom text-white text-center py-5">
+        <div class="container">
+            <h1 class="fw-bold display-4">Mi Blog Personal</h1>
+            <p class="lead">Luis Alfonso Pérez López</p>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mi Blog</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#informacion">Información</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#intereses">Intereses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="container my-5">
+
+        <!-- INFORMACIÓN -->
+        <section id="informacion" class="mb-5">
+            <h2 class="mb-4 text-warning">Información Personal</h2>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h3 class="card-title">Perfil Profesional</h3>
+                            <p>Mi nombre es Luis Alfonso Pérez López, estudiante de sexto semestre de Ingeniería en Computación. Me encuentro en una etapa de consolidación académica y desarrollo profesional, enfocado en fortalecer mis competencias técnicas y ampliar mi visión dentro del sector tecnológico.</p>
+                            <p>Mis principales áreas de interés son redes de computadoras y diseño visual de interfaces web, campos que integran análisis técnico, estructura lógica y experiencia de usuario. Mi formación está orientada al aprendizaje continuo, la resolución eficiente de problemas y la adaptación a entornos tecnológicos en constante evolución.</p>
+                            <p>Complemento mi preparación profesional con actividades como el deporte y la lectura, que contribuyen al desarrollo de disciplina, enfoque y pensamiento estratégico.</p>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <img src="../images/foto.png"
+                                 class="img-fluid rounded-circle border border-4 border-warning shadow"
+                                 style="width:200px; height:200px; object-fit:cover;"
+                                 alt="Foto profesional">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Proyección Profesional</h3>
+                    <p>A corto plazo, mi objetivo es integrarme a una organización que me permita adquirir experiencia práctica, participar en proyectos reales y fortalecer mis habilidades técnicas en un entorno profesional estructurado.</p>
+                    <p>A mediano y largo plazo, aspiro a construir una trayectoria sólida en el sector tecnológico, asumir responsabilidades de mayor impacto y eventualmente desarrollar un proyecto empresarial propio. Mi enfoque está en el crecimiento constante, la innovación y la generación de valor dentro de cada equipo en el que participe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERESES -->
+        <section id="intereses" class="mb-5">
+            <h2 class="mb-4 text-warning">Intereses Personales</h2>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Lectura</h3>
+                    <p>La lectura representa una herramienta clave en mi desarrollo personal y profesional. Entre mis autores de referencia se encuentra Dan Brown, cuyas obras combinan narrativa estructurada, análisis simbólico y contextos históricos con una construcción estratégica de suspenso.</p>
+                    <p>Este tipo de literatura refuerza mi capacidad de análisis, interpretación y pensamiento crítico, competencias fundamentales en el ámbito de la ingeniería.</p>
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Caminata y reflexión</h3>
+                    <p>La caminata, particularmente en horarios nocturnos, forma parte de mis hábitos de organización personal. Esta actividad me permite despejar la mente, estructurar ideas y optimizar procesos de pensamiento.</p>
+                    <p>En distintas ocasiones, ha sido un recurso efectivo para abordar desafíos técnicos o bloqueos en proyectos académicos, facilitando soluciones claras y funcionales. Considero esta práctica una herramienta de productividad y equilibrio personal.
+</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2 class="mb-4 text-warning">Contacto</h2>
+
+<div class="card shadow-sm mb-4">
+    <div class="card-body">
+        <h3 class="card-title mb-4">Medios de contacto</h3>
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-4">
+
+            <!-- Email -->
+            <div class="d-flex align-items-center me-2">
+                <img src="../images/email_icon.png" width="30" alt="Email">
+                <span>luis.perez9297@alumnos.udg.mx</span>
+            </div>
+
+            <!-- Instagram -->
+            <div class="d-flex align-items-center me-2">
+                <img src="../images/instagram_icon.png" width="30" alt="Instagram">
+                <span>luisponcho_</span>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="d-flex align-items-center me-2">
+                <img src="../images/phone_icon.png" width="30" alt="Teléfono">
+                <span>251 562 18 11</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Formulario</h3>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-warning">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2026 Luis Alfonso Pérez López | Blog Personal</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
